@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.21.7-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT")
     compileOnly("com.github.SlimefunGuguProject:Slimefun4:2025.1")
     compileOnly("me.clip:placeholderapi:2.11.6")
     compileOnly("net.guizhanss:GuizhanLibPlugin:2.3.0")
@@ -61,16 +61,17 @@ bukkit {
 tasks {
     runServer {
         downloadPlugins {
+            val t = 114514
             // Slimefun
-            url("https://builds.guizhanss.com/api/download/SlimefunGuguProject/Slimefun4/master/218")
+            url("https://builds.guizhanss.com/api/download/SlimefunGuguProject/Slimefun4/master/latest?t=${t}")
             // GuizhanLibPlugin
-            url("https://builds.guizhanss.com/api/download/ybw0014/GuizhanLibPlugin/master/latest")
+            url("https://builds.guizhanss.com/api/download/ybw0014/GuizhanLibPlugin/master/latest?t=${t}")
             // SlimeHUD
-            url("https://builds.guizhanss.com/api/download/SlimefunGuguProject/SlimeHUD/master/latest")
+            url("https://builds.guizhanss.com/api/download/SlimefunGuguProject/SlimeHUD/master/latest?t=${t}")
             // GuizhanCraft for testing convenient
-            url("https://builds.guizhanss.com/api/download/ybw0014/GuizhanCraft/master/latest")
+            url("https://builds.guizhanss.com/api/download/ybw0014/GuizhanCraft/master/latest?t=${t}")
         }
         jvmArgs("-Dcom.mojang.eula.agree=true")
-        minecraftVersion("1.21.6")
+        minecraftVersion("1.21.11")
     }
 }

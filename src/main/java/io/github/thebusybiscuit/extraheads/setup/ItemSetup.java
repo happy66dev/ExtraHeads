@@ -2,6 +2,8 @@ package io.github.thebusybiscuit.extraheads.setup;
 
 import java.util.logging.Level;
 
+import io.github.thebusybiscuit.extraheads.utils.MinecraftVersionUtils;
+
 import org.bukkit.entity.EntityType;
 
 import io.github.thebusybiscuit.extraheads.ExtraHeads;
@@ -68,7 +70,7 @@ public class ItemSetup {
         registerHead(EntityType.GLOW_SQUID, "57327ee11812b764c7ade70b282cce4c58e635b2015244081d1490543da7280e");
         registerHead(EntityType.GOAT, "457a0d538fa08a7affe312903468861720f9fa34e86d44b89dcec5639265f03");
 
-        if (MinecraftVersionUtil.isAtLeast(19)) {
+        if (MinecraftVersionUtils.isAtLeast(1, 19)) {
             // https://minecraft-heads.com/custom-heads/animals/61373-allay
             registerHead(EntityType.ALLAY, "df5de940bfe499c59ee8dac9f9c3919e7535eff3a9acb16f4842bf290f4c679f");
             // https://minecraft-heads.com/custom-heads/animals/63169-cold-frog
@@ -77,33 +79,47 @@ public class ItemSetup {
             registerHead(EntityType.TADPOLE, "987035f5352334c2cba6ac4c65c2b9059739d6d0e839c1dd98d75d2e77957847");
         }
 
-        if (MinecraftVersionUtil.isAtLeast(20)) {
+        if (MinecraftVersionUtils.isAtLeast(1, 20)) {
             // https://minecraft-heads.com/custom-heads/animals/62878-camel
             registerHead(EntityType.CAMEL, "3642c9f71131b5df4a8c21c8c6f10684f22abafb8cd68a1d55ac4bf263a53a31");
             // https://minecraft-heads.com/custom-heads/animals/64113-sniffer
             registerHead(EntityType.SNIFFER, "fe5a8341c478a134302981e6a7758ea4ecfd8d62a0df4067897e75502f9b25de");
         }
 
-        if (MinecraftVersionUtil.isAtLeast(20, 5)) {
+        if (MinecraftVersionUtils.isAtLeast(1, 20, 5)) {
             // https://minecraft-heads.com/custom-heads/head/91910-armadillo
             registerHead(EntityType.ARMADILLO, "9852b33ba294f560090752d113fe728cbc7dd042029a38d5382d65a2146068b7");
         }
 
-        if (MinecraftVersionUtil.isAtLeast(21)) {
+        if (MinecraftVersionUtils.isAtLeast(1, 21)) {
             // https://minecraft-heads.com/custom-heads/head/87691-bogged
             registerHead(EntityType.BOGGED, "a3b9003ba2d05562c75119b8a62185c67130e9282f7acbac4bc2824c21eb95d9");
             // https://minecraft-heads.com/custom-heads/head/69108-breeze
             registerHead(EntityType.BREEZE, "a275728af7e6a29c88125b675a39d88ae9919bb61fdc200337fed6ab0c49d65c");
         }
 
-        if (MinecraftVersionUtil.isAtLeast(21, 4)) {
+        if (MinecraftVersionUtils.isAtLeast(1, 21, 4)) {
             // https://minecraft-heads.com/custom-heads/head/111644-creaking
             registerHead(EntityType.CREAKING, "3630e03391db6c0e9c8643a59754c2d19a1f938a787150af3b3d516ba8094cda");
         }
 
-        if (MinecraftVersionUtil.isAtLeast(21, 6)) {
+        if (MinecraftVersionUtils.isAtLeast(1, 21, 6)) {
             // https://minecraft-heads.com/custom-heads/head/117418-happy-ghast
             registerHead(EntityType.HAPPY_GHAST, "a1a36cb93d01675c4622dd5c8d872110911ec12c372e89afa8ba03862867f6fb");
+        }
+
+        if (MinecraftVersionUtils.isAtLeast(1, 21, 11)) {
+            // https://minecraft-heads.com/custom-heads/head/123519-camel-husk
+            registerHead(EntityType.CAMEL_HUSK, "3bd7a92a6f67b7500d16c4e12f28058ec2859311556ba03be2d1f581170f2db6");
+            // https://minecraft-heads.com/custom-heads/head/123259-nautilus
+            registerHead(EntityType.NAUTILUS, "3bb340dd3302615348de5162fe1670b9c5c9c616cd92d2de9d8398cb33e842ae");
+            // https://minecraft-heads.com/custom-heads/head/123518-parched
+            registerHead(EntityType.PARCHED, "24aeceff5f26dd8413c5c03547c234ac03108d187af0b9cd834a8ce12598591c");
+            // https://minecraft-heads.com/custom-heads/head/123260-zombie-nautilus
+            registerHead(EntityType.ZOMBIE_NAUTILUS, "fd9a933376da44c3391307cb9f4cf03f16f3a54f495fd5a11bad8a373f9d5720");
+            // https://minecraft-heads.com/custom-heads/head/89401-zombie-horse
+            registerHead(EntityType.ZOMBIE_HORSE, "ce62ef83bc7ddc9b86a6a1a916d1ddb802f4d14fd75be8cac6d69c7b6e1cf97");
+
         }
 
         ExtraHeads.getRegistry().getConfig().save();
