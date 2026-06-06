@@ -1,4 +1,4 @@
-# ExtraHeads 额外头颅
+# ExtraHeads 额外头颅 [魔改版]
 
 ExtraHeads 是一个 Slimefun4 附属插件。
 你需要安装 Slimefun4 才能让此插件运行。
@@ -23,3 +23,7 @@ ExtraHeads 是一个 Slimefun4 附属插件。
 ## 开源
 
 本项目以[MIT协议](/LICENSE)开源。
+
+## ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=happy66dev/ExtraHeads&type=Date)](https://star-history.com/#happy66dev/ExtraHeads&Date)
