@@ -13,8 +13,6 @@ import io.github.thebusybiscuit.extraheads.setup.Registry;
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
 
-import net.guizhanss.minecraft.guizhanlib.updater.GuizhanUpdater;
-
 import lombok.Getter;
 
 public class ExtraHeads extends JavaPlugin implements SlimefunAddon {
@@ -44,10 +42,6 @@ public class ExtraHeads extends JavaPlugin implements SlimefunAddon {
 
         // Setting up bStats
         new Metrics(this, 5650);
-
-        if (registry.getConfig().getBoolean("options.auto-update") && getPluginVersion().startsWith("Build")) {
-            GuizhanUpdater.start(this, getFile(), "SlimefunGuguProject", "ExtraHeads", "master");
-        }
 
         ItemSetup.setup();
 
