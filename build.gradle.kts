@@ -16,7 +16,7 @@ repositories {
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT")
-    compileOnly("com.github.SlimefunGuguProject:Slimefun4:2025.1")
+    compileOnly("com.github.happy66dev:Slimefun4:happy-SNAPSHOT")
     compileOnly("me.clip:placeholderapi:2.11.6")
     compileOnly("net.guizhanss:GuizhanLibPlugin:2.3.0")
     implementation("org.bstats:bstats-bukkit:3.1.0")
@@ -63,7 +63,7 @@ tasks {
         downloadPlugins {
             val t = 114514
             // Slimefun
-            url("https://builds.guizhanss.com/api/download/SlimefunGuguProject/Slimefun4/master/latest?t=${t}")
+            url("https://github.com/happy66dev/Slimefun4/releases/latest")
             // GuizhanLibPlugin
             url("https://builds.guizhanss.com/api/download/ybw0014/GuizhanLibPlugin/master/latest?t=${t}")
             // SlimeHUD
