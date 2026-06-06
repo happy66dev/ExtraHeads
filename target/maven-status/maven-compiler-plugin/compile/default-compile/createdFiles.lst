@@ -1,0 +1,8 @@
+io\github\thebusybiscuit\extraheads\listeners\HeadListener.class
+io\github\thebusybiscuit\extraheads\setup\Registry.class
+io\github\thebusybiscuit\extraheads\ExtraHeads.class
+io\github\thebusybiscuit\extraheads\utils\MinecraftVersionUtils.class
+io\github\thebusybiscuit\extraheads\setup\ItemSetup.class
+io\github\thebusybiscuit\extraheads\items\MobHead.class
+io\github\thebusybiscuit\extraheads\setup\RecipeTypes.class
+io\github\thebusybiscuit\extraheads\setup\ItemGroups.class
